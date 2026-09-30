@@ -7,11 +7,13 @@ import { lectures, siteConfig } from "@/lib/data";
 import { getYouTubeEmbedUrl, getYouTubeThumbnail } from "@/lib/utils";
 import { YoutubeIcon } from "@/components/ui/Icons";
 import { Play, Search, ArrowLeft, ExternalLink, Calendar, BookOpen } from "lucide-react";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function LecturesArchivePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+  const { t } = useLanguage();
 
   const categories = ["All", ...Array.from(new Set(lectures.map((l) => l.category)))];
 
@@ -40,8 +42,8 @@ export default function LecturesArchivePage() {
             href="/"
             className="inline-flex items-center gap-2 text-sm text-secondary hover:text-green-deep font-medium transition-colors"
           >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Sheikh Muhammed Hamdu
+            <ArrowLeft className="w-4 h-4 rtl:rotate-180" />
+            <span>{t.lectures.backToHome}</span>
           </Link>
         </div>
 
@@ -53,10 +55,10 @@ export default function LecturesArchivePage() {
             </span>
           </div>
           <h1 className="font-heading text-3xl lg:text-5xl font-bold text-primary mb-3">
-            Lectures & Lessons Archive
+            {t.lectures.archiveHeading}
           </h1>
           <p className="text-secondary max-w-2xl text-base">
-            Complete catalogue of verified lessons, Friday khutbahs, and thematic series delivered by Sheikh Muhammed Hamdu Rasho.
+            {t.lectures.archiveSubtitle}
           </p>
         </div>
 
@@ -64,13 +66,13 @@ export default function LecturesArchivePage() {
         <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-10">
           {/* Search Input */}
           <div className="relative w-full md:w-80">
-            <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-secondary" />
+            <Search className="w-4 h-4 absolute start-3 top-1/2 -translate-y-1/2 text-secondary" />
             <input
               type="text"
-              placeholder="Search lectures by topic, title..."
+              placeholder={t.lectures.searchPlaceholder}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-4 py-2.5 bg-card border border-border text-sm rounded-sm focus:outline-none focus:border-green-deep focus:ring-1 focus:ring-green-deep"
+              className="w-full ps-9 pe-4 py-2.5 bg-card border border-border text-sm rounded-sm focus:outline-none focus:border-green-deep focus:ring-1 focus:ring-green-deep"
             />
           </div>
 
@@ -87,7 +89,7 @@ export default function LecturesArchivePage() {
                     : "bg-card border border-border text-secondary hover:text-primary hover:border-gold"
                 }`}
               >
-                {cat}
+                {cat === "All" ? t.lectures.filterAll : cat}
               </button>
             ))}
           </div>
@@ -99,14 +101,14 @@ export default function LecturesArchivePage() {
             <div className="flex items-center justify-between mb-4 pb-3 border-b border-border">
               <span className="text-xs uppercase font-bold text-gold tracking-wider flex items-center gap-1.5">
                 <BookOpen className="w-4 h-4" />
-                Now Playing Lesson
+                {t.lectures.nowPlaying}
               </span>
               <button
                 type="button"
                 onClick={() => setActiveVideoId(null)}
                 className="text-xs text-secondary hover:text-primary font-medium"
               >
-                Close Player ×
+                ×
               </button>
             </div>
 
@@ -128,7 +130,7 @@ export default function LecturesArchivePage() {
                   <span className="text-xs font-semibold px-2 py-0.5 bg-green-deep text-white rounded-xs">
                     {activeLecture.category}
                   </span>
-                  <h2 className="font-heading text-xl font-bold text-primary mt-2 mb-2 leading-snug">
+                  <h2 className="font-heading text-lg lg:text-xl font-bold text-primary mt-2 mb-2 leading-snug">
                     {activeLecture.title}
                   </h2>
                   <p className="text-xs text-secondary mb-4 flex items-center gap-1">
@@ -148,7 +150,7 @@ export default function LecturesArchivePage() {
                     className="text-xs font-semibold text-secondary hover:text-red-600 flex items-center gap-1.5 py-2 px-3 border border-border rounded-xs hover:border-red-300 transition-colors"
                   >
                     <ExternalLink className="w-3.5 h-3.5" />
-                    Open on YouTube
+                    {t.lectures.openYouTube}
                   </a>
                 </div>
               </div>
@@ -159,7 +161,7 @@ export default function LecturesArchivePage() {
         {/* Results List */}
         {filteredLectures.length === 0 ? (
           <div className="text-center py-20 bg-card border border-border rounded-sm">
-            <p className="text-secondary text-base">No lectures found matching your query.</p>
+            <p className="text-secondary text-base">{t.lectures.noResults}</p>
             <button
               type="button"
               onClick={() => {
@@ -168,7 +170,7 @@ export default function LecturesArchivePage() {
               }}
               className="mt-3 text-xs text-green-deep font-semibold underline"
             >
-              Reset filters
+              {t.lectures.resetFilters}
             </button>
           </div>
         ) : (
@@ -181,7 +183,7 @@ export default function LecturesArchivePage() {
                   className={`bg-card p-4 border rounded-sm flex flex-col justify-between transition-all group ${
                     isPlaying
                       ? "border-gold shadow-md ring-1 ring-gold/40"
-                      : "border-border hover:border-gold/50 shadow-xs"
+                      : "border-border hover:border-gold/50 shadow-2xs"
                   }`}
                 >
                   <div>
@@ -207,12 +209,12 @@ export default function LecturesArchivePage() {
                               : "bg-black/75 text-white group-hover:bg-red-600"
                           }`}
                         >
-                          <Play className="w-5 h-5 fill-current" />
+                          <Play className="w-4 h-4 fill-current rtl:rotate-180" />
                         </div>
                       </div>
                       {isPlaying && (
-                        <span className="absolute top-2 left-2 text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-gold text-white rounded-xs shadow-xs">
-                          Now Playing
+                        <span className="absolute top-2 start-2 text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-gold text-white rounded-xs shadow-xs">
+                          {t.lectures.nowPlaying}
                         </span>
                       )}
                     </div>
@@ -225,7 +227,7 @@ export default function LecturesArchivePage() {
                       <span className="text-xs text-secondary">{lecture.date}</span>
                     </div>
 
-                    <h3 className="font-heading text-base font-bold text-primary mb-2 line-clamp-2 leading-snug group-hover:text-green-deep transition-colors">
+                    <h3 className="font-heading text-sm lg:text-base font-bold text-primary mb-2 line-clamp-2 leading-snug group-hover:text-green-deep transition-colors">
                       {lecture.title}
                     </h3>
                     <p className="text-xs text-secondary line-clamp-2 mb-4 leading-relaxed">
@@ -242,8 +244,8 @@ export default function LecturesArchivePage() {
                       }}
                       className="text-xs font-semibold text-green-deep hover:text-gold flex items-center gap-1 transition-colors"
                     >
-                      <Play className="w-3.5 h-3.5 fill-current" />
-                      {isPlaying ? "Playing Above" : "Play on Site"}
+                      <Play className="w-3.5 h-3.5 fill-current rtl:rotate-180" />
+                      {isPlaying ? t.lectures.playingAbove : t.lectures.playOnSite}
                     </button>
 
                     <a
@@ -262,22 +264,22 @@ export default function LecturesArchivePage() {
           </div>
         )}
 
-        {/* Bottom Banner to official YouTube channel */}
+        {/* Bottom Banner */}
         <div className="mt-16 p-8 bg-card border border-border text-center rounded-sm">
           <h3 className="font-heading text-xl font-bold text-primary mb-2">
-            Looking for more recorded lessons?
+            {t.lectures.lookingForMore}
           </h3>
           <p className="text-sm text-secondary max-w-md mx-auto mb-6">
-            Subscribe to Sheikh Muhammed Hamdu's verified YouTube channel for new series uploads and live broadcasts.
+            {t.lectures.lookingForMoreDesc}
           </p>
           <a
             href={siteConfig.social.youtube}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-red-600 text-white font-medium text-sm rounded-sm hover:bg-red-700 transition-colors shadow-xs"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-red-600 text-white font-medium text-xs rounded-sm hover:bg-red-700 transition-colors shadow-xs"
           >
-            <YoutubeIcon className="w-5 h-5 text-white" />
-            Visit YouTube Channel
+            <YoutubeIcon className="w-4 h-4 text-white" />
+            {t.lectures.visitChannel}
           </a>
         </div>
       </div>

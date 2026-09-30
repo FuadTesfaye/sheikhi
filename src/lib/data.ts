@@ -1,4 +1,6 @@
 export const siteConfig = {
+  url: "https://shaikhmohamedhamdurasho.pro.et",
+  domain: "shaikhmohamedhamdurasho.pro.et",
   name: "Sheikh Muhammed Hamdu",
   arabicName: "الشيخ محمد حمدو رشو",
   fullName: "Sheikh Mohamed Hamdu Rasho",
@@ -209,6 +211,12 @@ export const qualifications = [
 
 // Add remaining scan files as additional certificates
 export const additionalCertificates = [
+  "/certificates/Scan10001.jpg",
+  "/certificates/Scan10002.jpg",
+  "/certificates/Scan10003.jpg",
+  "/certificates/Scan10004.jpg",
+  "/certificates/Scan10005.jpg",
+  "/certificates/Scan10006.jpg",
   "/certificates/scan09.jpg",
   "/certificates/scan10.jpg",
   "/certificates/scan11.jpg",
@@ -297,6 +305,123 @@ export const teachingAreas = [
 ];
 
 export const lectures = [
+  {
+    id: 101,
+    title: "መልካም ንግግር || ነብዩ(ሰዐወ) መዲና ከተሰደዱ ጀምሮ…",
+    description: "ስለ መልካም ንግግር እና ስለ ነቢዩ (ﷺ) የመዲና ሂጅራና ታሪክ የተሰጠ ጠቃሚ ትምህርት በኡስታዝ ሙሐመድ ሃምዱ",
+    youtubeId: "-SBWul6CPlY",
+    category: "Seerah",
+    date: "2026-09-20",
+    featured: true
+  },
+  {
+    id: 102,
+    title: "መልካም ንግግር || እዝነት እና አዛኝነት በኢስላም",
+    description: "በኢስላም ውስጥ ስላለው የታላቅ እዝነት እና መልካም ስነምግባር አስፈላጊነት ማብራሪያ",
+    youtubeId: "5UP4LWzCrMw",
+    category: "Aqidah",
+    date: "2026-09-18",
+    featured: true
+  },
+  {
+    id: 103,
+    title: "“ቁርኣን የህይወት መንገድ!” || ሰዋኢዱል ኢኻእ",
+    description: "ሰዋኢዱል ኢኻእ ምዕራፍ 5 ክፍል 1 - ቁርኣንን የህይወት መመሪያና ፈውስ ማድረግ",
+    youtubeId: "wHb6_pXUanI",
+    category: "Qur'an",
+    date: "2026-09-16",
+    featured: true
+  },
+  {
+    id: 104,
+    title: "“ሩቃ (የቁርአን ህክምና)” || ሰዋዒዱል ኢኻእ",
+    description: "በቁርኣን አናቅጽ የሚደረግ ህጋዊ ሩቃና የሸሪዓ ህክምና መመሪያዎች ከአፍሪካ ቲቪ",
+    youtubeId: "prsGVkMkVxA",
+    category: "Fiqh",
+    date: "2026-09-14",
+    featured: true
+  },
+  {
+    id: 105,
+    title: "ኩራት ለመተው የሚረዱ መንገዶች || ሰዋዒዱል ኢኻእ",
+    description: "ኩራትን ማራቅ እና የቀልብ ትህትናን ማዳበር - ሰዋዒዱል ኢኻእ አፍሪካ ቲቪ",
+    youtubeId: "hPMbAkWOa6M",
+    category: "Aqidah",
+    date: "2026-09-10",
+    featured: true
+  },
+  {
+    id: 106,
+    title: "ሰዋኢዱል ኢኻእ ምእራፍ 4 || ክፍል 8",
+    description: "የእስልምና ወንድማማችነት እና ማህበራዊ ስነምግባር አስፈላጊነት",
+    youtubeId: "_qFeKjFAMwI",
+    category: "Seerah",
+    date: "2026-09-06",
+    featured: true
+  },
+  {
+    id: 107,
+    title: "የተረሳው አጀንዳችን... || አፍሪካ ቲቪ",
+    description: "የህይወት ጉዞ እና የአኺራ ስንቅ ማዘጋጀት አስፈላጊነት የተሰጠ ማስታወሻ",
+    youtubeId: "EvHictuVPRM",
+    category: "Aqidah",
+    date: "2026-09-02",
+    featured: false
+  },
+  {
+    id: 108,
+    title: "ሰዋዒዱል ኢኻእ | ሸይኽ ሙሐመድ ሐምዱ የረመዳን ልዩ ዝግጅት",
+    description: "የበረከት እና የኢባዳ ወር የረመዳን ተከታታይ የትምህርት ፕሮግራም",
+    youtubeId: "h2ODgZefv14",
+    category: "Qur'an",
+    date: "2026-08-28",
+    featured: false
+  },
+  {
+    id: 109,
+    title: "ሰዋኢዱል ኢኻእ ምእራፍ 4 || ክፍል 1",
+    description: "ሰዋኢዱል ኢኻእ ምእራፍ 4 የመክፈቻ ክፍል ከአፍሪካ ቲቪ ዝግጅት",
+    youtubeId: "r2aF53RCFe0",
+    category: "Aqidah",
+    date: "2026-08-25",
+    featured: false
+  },
+  {
+    id: 110,
+    title: "ቀጥታ ስርጭት || ሰዋዒዱል ኢኻእ || ምዕራፍ 4 ክፍል 5",
+    description: "የቀጥታ ስርጭት ተከታታይ ትምህርት እና የሸሪዓ ጥያቄና መልስ ፕሮግራም",
+    youtubeId: "ZWw1XT4a5pQ",
+    category: "Fiqh",
+    date: "2026-08-20",
+    featured: false
+  },
+  {
+    id: 111,
+    title: "ቀጥታ ስርጭት || ሰዋዒዱል ኢኻእ || ምዕራፍ 4 ክፍል 25",
+    description: "የቀጥታ ስርጭት ተከታታይ የዳዕዋ ፕሮግራም ከአፍሪካ ቲቪ",
+    youtubeId: "nvA2h7R6tk8",
+    category: "Seerah",
+    date: "2026-08-15",
+    featured: false
+  },
+  {
+    id: 112,
+    title: "ቀጥታ ስርጭት || ሰዋዒዱል ኢኻእ || ምዕራፍ 4 ክፍል 9",
+    description: "የሸሪዓ ህግጋት እና የፈትዋ ማብራሪያ ተከታታይ ክፍል",
+    youtubeId: "6_jEm3O4GmA",
+    category: "Fiqh",
+    date: "2026-08-10",
+    featured: false
+  },
+  {
+    id: 113,
+    title: "ሰዋኢዱል ኢኻእ ምእራፍ 4 || ክፍል 5",
+    description: "የወንድማማችነት ትስስር እና የኢስላም አደራ ማብራሪያ",
+    youtubeId: "E3KvCKSpBfU",
+    category: "Aqidah",
+    date: "2026-08-05",
+    featured: false
+  },
   {
     id: 1,
     title: "ቀጥተኛ መንገድ እና ቱርጉሞቹ",

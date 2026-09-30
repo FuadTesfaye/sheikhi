@@ -17,6 +17,7 @@
   --font-heading: 'Manrope', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
   --font-arabic: 'Noto Naskh Arabic', serif;
+  --font-amharic: 'Noto Sans Ethiopic', sans-serif;
 }
 
 html {
@@ -31,12 +32,47 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.font-arabic {
+  font-family: var(--font-arabic), serif;
+}
+
+body.font-amharic {
+  font-family: var(--font-amharic), sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
 
+body.font-arabic h1,
+body.font-arabic h2,
+body.font-arabic h3,
+body.font-arabic h4,
+body.font-arabic h5,
+body.font-arabic h6 {
+  font-family: var(--font-arabic), serif;
+}
+
+body.font-amharic h1,
+body.font-amharic h2,
+body.font-amharic h3,
+body.font-amharic h4,
+body.font-amharic h5,
+body.font-amharic h6 {
+  font-family: var(--font-amharic), sans-serif;
+}
+
 .font-arabic {
-  font-family: var(--font-arabic);
+  font-family: var(--font-arabic), serif;
+}
+
+.font-amharic {
+  font-family: var(--font-amharic), sans-serif;
+}
+
+/* RTL styles */
+[dir="rtl"] {
+  text-align: right;
 }
 
 /* Scrollbar */
