@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Mail, Phone, Send } from "lucide-react";
-import { YoutubeIcon, TikTokIcon } from "@/components/ui/Icons";
+import { YoutubeIcon, TikTokIcon, WhatsAppIcon } from "@/components/ui/Icons";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import { siteConfig } from "@/lib/data";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -61,6 +61,14 @@ export function Footer() {
               {t.footer.connect}
             </h3>
             <div className="space-y-3">
+              <a
+                href={siteConfig.social.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-xs text-white/60 hover:text-emerald-400 transition-colors"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-emerald-400" /> WhatsApp Channel
+              </a>
               <a
                 href={siteConfig.social.youtube}
                 target="_blank"

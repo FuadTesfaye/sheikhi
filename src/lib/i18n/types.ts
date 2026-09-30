@@ -19,6 +19,10 @@ export interface Translations {
     amharicName: string;
     englishName: string;
     headline: string;
+    imamsLeaderTitle: string;
+    supremeCouncilTitle: string;
+    ulamaChairmanTitle: string;
+    woredaViceChairTitle: string;
     shortBio: string;
     watchLectures: string;
     learnAboutHim: string;

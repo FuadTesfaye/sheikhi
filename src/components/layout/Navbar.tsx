@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { YoutubeIcon, TikTokIcon } from "@/components/ui/Icons";
+import { YoutubeIcon, TikTokIcon, WhatsAppIcon } from "@/components/ui/Icons";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import { siteConfig } from "@/lib/data";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -70,6 +70,15 @@ export function Navbar() {
 
             <div className="hidden sm:flex items-center gap-2 border-s border-border ps-3">
               <a
+                href={siteConfig.social.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary hover:text-emerald-600 transition-colors p-1"
+                title="WhatsApp Group"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-emerald-600" />
+              </a>
+              <a
                 href={siteConfig.social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -120,7 +129,15 @@ export function Navbar() {
                 </a>
               ))}
 
-              <div className="flex gap-4 px-4 pt-3 border-t border-border mt-3">
+              <div className="flex flex-wrap gap-4 px-4 pt-3 border-t border-border mt-3">
+                <a
+                  href={siteConfig.social.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary hover:text-emerald-600 transition-colors text-xs flex items-center gap-2 font-medium"
+                >
+                  <WhatsAppIcon className="w-4 h-4 text-emerald-600" /> WhatsApp
+                </a>
                 <a
                   href={siteConfig.social.youtube}
                   target="_blank"

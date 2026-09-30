@@ -48,6 +48,7 @@ export function JsonLd() {
       name: "Ethiopian Islamic Affairs Supreme Council"
     },
     sameAs: [
+      siteConfig.social.whatsapp,
       siteConfig.social.youtube,
       siteConfig.social.tiktok,
       siteConfig.social.telegram,

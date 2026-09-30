@@ -3,7 +3,7 @@
 import { siteConfig } from "@/lib/data";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Mail, Phone, MapPin, Send, ShieldCheck, CheckCircle2, User, Building, Video, Award, Scroll, BookOpen, ExternalLink } from "lucide-react";
-import { YoutubeIcon, TikTokIcon, FacebookIcon } from "@/components/ui/Icons";
+import { YoutubeIcon, TikTokIcon, FacebookIcon, WhatsAppIcon } from "@/components/ui/Icons";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export function ContactSection() {
@@ -108,6 +108,16 @@ export function ContactSection() {
                 {t.contact.followChannels}
               </span>
               <div className="flex items-center gap-3 flex-wrap">
+                <a 
+                  href={siteConfig.social.whatsapp} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-3 bg-white/5 hover:bg-emerald-600 text-ivory transition-all rounded-xs flex items-center gap-2 text-xs"
+                  title="WhatsApp"
+                >
+                  <WhatsAppIcon className="w-4 h-4 text-emerald-400" />
+                  <span>WhatsApp</span>
+                </a>
                 <a 
                   href={siteConfig.social.youtube} 
                   target="_blank" 

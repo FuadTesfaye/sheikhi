@@ -34,10 +34,25 @@ export const siteConfig = {
     "Sheikh Muhammed is a dedicated Islamic media preacher, delivering engaging sermons and producing informative content across various Ethiopian media channels including Africa TV, Bilal TV, and Zawiya TV."
   ],
   social: {
+    whatsapp: "https://chat.whatsapp.com/GDnyAevKvayILIRqQY9kok",
     youtube: "https://youtube.com/@mohamedhamdu",
     tiktok: "https://www.tiktok.com/@shiekhmohammedhamdu",
     telegram: "https://t.me/mohammedhamdu",
     facebook: "https://www.facebook.com/share/p/1C3V9SXCG5/"
+  },
+  leadershipTitles: {
+    imamsLeader: "Chairman of the Imams of Addis Ababa & Sheger",
+    imamsLeaderArabic: "رئيس أئمة أديس أبابا ومدينة شغر",
+    imamsLeaderAmharic: "የአዲስ አበባ እና የሸገር ኢማሞች ሰብሳቢ",
+    supremeCouncil: "Member of Addis Ababa Majlis Supreme Council",
+    supremeCouncilArabic: "عضو المجلس الأعلى لمجلس الشؤون الإسلامية بأديس أبابا",
+    supremeCouncilAmharic: "የአዲስ አበባ መጅሊስ ከፍተኛ ምክር ቤት አባል",
+    ulamaChairman: "Chairman of the Ulama Council of Lemi Kura Sub-City",
+    ulamaChairmanArabic: "رئيس مجلس علماء محافظة لمي كرى",
+    ulamaChairmanAmharic: "የለሚኩራ ክ/ከ ዑለማ ምክር ቤት ሰብሳቢ",
+    woredaViceChair: "Vice Chairman of Lemi Kura Woreda 05 Majlis",
+    woredaViceChairArabic: "نائب رئيس مجلس الشؤون الإسلامية بمحافظة لمي كرى - مديرية 05",
+    woredaViceChairAmharic: "በለሚ ኮራ ክ/ከ የወረዳ 05 መጅሊስ ምክትል ሰብሳቢ",
   }
 };
 
@@ -275,6 +290,36 @@ export const additionalCertificates = [
 export const positions = [
   {
     id: 1,
+    organization: "Council of Imams of Addis Ababa & Sheger",
+    role: "Chairman",
+    location: "Addis Ababa & Sheger City, Ethiopia",
+    startDate: "2023",
+    endDate: "Present",
+    description: "Serving as Chairman of the Council of Imams for Addis Ababa and Sheger City, coordinating spiritual guidance, sermon unity, and community outreach.",
+    current: true
+  },
+  {
+    id: 2,
+    organization: "Lemi Kura Sub-City Ulama Council & Woreda 05 Majlis",
+    role: "Ulama Council Chairman · Woreda 05 Majlis Vice Chairman",
+    location: "Addis Ababa, Ethiopia",
+    startDate: "2022",
+    endDate: "Present",
+    description: "Serving as Chairman of the Ulama Council of Lemi Kura Sub-City, and Vice Chairman of Woreda 05 Islamic Affairs Majlis.",
+    current: true
+  },
+  {
+    id: 3,
+    organization: "Addis Ababa Islamic Affairs Supreme Council",
+    role: "Supreme Council Member",
+    location: "Addis Ababa, Ethiopia",
+    startDate: "2022",
+    endDate: "Present",
+    description: "Active member of the Supreme Council of Addis Ababa Majlis, participating in institutional leadership and judicial consultative affairs.",
+    current: true
+  },
+  {
+    id: 4,
     organization: "Masjid Abu Bakr",
     role: "Imam & Khateeb",
     location: "Addis Ababa, Ethiopia",
