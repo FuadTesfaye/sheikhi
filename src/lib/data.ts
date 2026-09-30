@@ -5,7 +5,7 @@ export const siteConfig = {
   arabicName: "الشيخ محمد حمدو رشو",
   fullName: "Sheikh Mohamed Hamdu Rasho",
   headline: "Islamic Scholar · Teacher · Khateeb",
-  shortBio: "Sheikh Mohamed Hamdu Rasho is an Islamic scholar, teacher, and Imam dedicated to teaching, reminding, and serving the Muslim community. With over 25 years of experience in Islamic studies, he specializes in Fiqh, Hadith, and Quranic studies.",
+  shortBio: "فضيلة الشيخ محمد حمدو رشو، عالم وباحث ومدرس إسلامي مكرس لنشر العلوم الشرعية وخدمة المجتمع الإسلامي. يشغل حالياً منصب رئيس أئمة أديس أبابا ومدينة شغر، ورئيس مجلس علماء محافظة لمي كرى، وعضو المجلس الأعلى للشؤون الإسلامية، وإمام وخطيب مسجد أبي بكر الصديق.",
   email: "mohamedhamdu3541@gmail.com",
   phone: "+251 913083541",
   phoneNational: "0913083541",

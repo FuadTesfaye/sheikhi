@@ -42,61 +42,69 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://shaikhmohamedhamdurasho.pro.et"),
   title: {
-    default: "Sheikh Mohamed Hamdu Rasho | فضيلة الشيخ محمد حمدو | ሼኽ ሙሐመድ ሐምዱ",
-    template: "%s | Sheikh Mohamed Hamdu Rasho",
+    default: "فضيلة الشيخ محمد حمدو رشو | عالم وباحث ومدرس إسلامي",
+    template: "%s | فضيلة الشيخ محمد حمدو رشو",
   },
   description:
-    "Official website of Sheikh Mohamed Hamdu Rasho (فضيلة الشيخ محمد حمدو رشو / ሼኽ ሙሐመድ ሐምዱ) — Islamic scholar, Imam and Khateeb of Masjid Abu Bakr in Addis Ababa, and Ph.D. candidate in Usul al-Fiqh. Explore his educational journey, verified certificates, recorded television lectures, and Islamic guidance.",
+    "الموقع الرسمي لفضيلة الشيخ محمد حمدو رشو — عالم وباحث ومدرس إسلامي، رئيس أئمة أديس أبابا ومدينة شغر، ورئيس مجلس علماء محافظة لمي كرى، وعضو المجلس الأعلى للشؤون الإسلامية بأديس أبابا، وإمام وخطيب مسجد أبي بكر الصديق، وباحث الدكتوراه في أصول الفقه.",
   keywords: [
+    "الشيخ محمد حمدو رشو",
+    "فضيلة الشيخ محمد حمدو",
+    "محمد حمدو رشو",
+    "رئيس أئمة أديس أبابا وشغر",
+    "رئيس مجلس علماء لمي كرى",
+    "عضو المجلس الأعلى للشؤون الإسلامية",
+    "إمام وخطيب مسجد أبي بكر الصديق",
+    "عالم إسلامي إثيوبيا",
+    "أصول الفقه",
+    "قناة إفريقيا الفضائية",
+    "سواعد الإخاء",
     "Sheikh Mohamed Hamdu Rasho",
     "Sheikh Muhammed Hamdu",
-    "الشيخ محمد حمدو رشو",
     "ሼኽ ሙሐመድ ሐምዱ ረሾ",
     "ሸይኽ ሙሐመድ ሐምዱ",
-    "Ustaz Mohamed Hamdu",
-    "Masjid Abu Bakr Addis Ababa",
-    "Islamic Scholar Ethiopia",
-    "Usul al-Fiqh",
-    "Islamic Jurisprudence",
-    "Africa TV Sawa'id al-Ikha",
+    "የአዲስ አበባ እና የሸገር ኢማሞች ሰብሳቢ",
+    "የለሚኩራ ክ/ከ ዑለማ ምክር ቤት ሰብሳቢ",
     "ኢስላማዊ ትምህርቶች",
     "ፈትዋ እና ሸሪዓ"
   ],
-  authors: [{ name: "Sheikh Mohamed Hamdu Rasho" }],
-  creator: "Sheikh Mohamed Hamdu Rasho",
-  publisher: "Sheikh Mohamed Hamdu Official Archive",
+  authors: [{ name: "فضيلة الشيخ محمد حمدو رشو", url: "https://shaikhmohamedhamdurasho.pro.et" }],
+  creator: "الشيخ محمد حمدو رشو",
+  publisher: "المكتب الرسمي لفضيلة الشيخ محمد حمدو رشو",
   alternates: {
     canonical: "https://shaikhmohamedhamdurasho.pro.et",
     languages: {
-      en: "https://shaikhmohamedhamdurasho.pro.et?lang=en",
       ar: "https://shaikhmohamedhamdurasho.pro.et?lang=ar",
+      en: "https://shaikhmohamedhamdurasho.pro.et?lang=en",
       am: "https://shaikhmohamedhamdurasho.pro.et?lang=am",
     },
   },
   openGraph: {
-    title: "Sheikh Mohamed Hamdu Rasho | Official Scholar Website",
+    title: "فضيلة الشيخ محمد حمدو رشو | الموقع الرسمي والمنصة العلمية",
     description:
-      "Official website and digital archive of Sheikh Mohamed Hamdu Rasho (فضيلة الشيخ محمد حمدو رشو) — Imam, Khateeb, and Islamic Jurisprudence Scholar.",
+      "الموقع الرسمي والمنصة المعتمدة لفضيلة الشيخ محمد حمدو رشو — رئيس أئمة أديس أبابا ومدينة شغر، ورئيس مجلس علماء محافظة لمي كرى، وعضو المجلس الأعلى للشؤون الإسلامية، وإمام وخطيب مسجد أبي بكر الصديق. السيرة العلمية والشهادات والمحاضرات المرئية.",
     url: "https://shaikhmohamedhamdurasho.pro.et",
-    siteName: "Sheikh Mohamed Hamdu Rasho Official",
-    locale: "en_US",
-    alternateLocale: ["ar_SA", "am_ET"],
+    siteName: "فضيلة الشيخ محمد حمدو رشو",
+    locale: "ar_SA",
+    alternateLocale: ["en_US", "am_ET"],
     type: "profile",
     images: [
       {
-        url: "/portrait.jpg",
-        width: 800,
-        height: 1024,
-        alt: "Sheikh Mohamed Hamdu Rasho - Islamic Scholar & Khateeb",
+        url: "https://shaikhmohamedhamdurasho.pro.et/portrait.jpg",
+        secureUrl: "https://shaikhmohamedhamdurasho.pro.et/portrait.jpg",
+        width: 900,
+        height: 1200,
+        type: "image/jpeg",
+        alt: "فضيلة الشيخ محمد حمدو رشو - عالم إسلامي وخطيب",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sheikh Mohamed Hamdu Rasho | Islamic Scholar & Teacher",
+    title: "فضيلة الشيخ محمد حمدو رشو | عالم وباحث ومدرس إسلامي",
     description:
-      "Official digital archive of Sheikh Mohamed Hamdu Rasho — Imam, Khateeb of Masjid Abu Bakr, and Doctoral Candidate in Usul al-Fiqh.",
-    images: ["/portrait.jpg"],
+      "الموقع الرسمي والمنصة الرقمية لفضيلة الشيخ محمد حمدو رشو — رئيس أئمة أديس أبابا وشغر، ورئيس مجلس علماء لمي كرى، وإمام وخطيب مسجد أبي بكر الصديق، وباحث الدكتوراه في أصول الفقه.",
+    images: ["https://shaikhmohamedhamdurasho.pro.et/portrait.jpg"],
   },
   robots: {
     index: true,
@@ -118,13 +126,14 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ar"
+      dir="rtl"
       className={`${manrope.variable} ${inter.variable} ${notoNaskhArabic.variable} ${notoSansEthiopic.variable}`}
     >
       <head>
         <JsonLd />
       </head>
-      <body className="min-h-screen bg-ivory text-primary antialiased">
+      <body className="min-h-screen bg-ivory text-primary antialiased font-arabic">
         <LanguageProvider>
           <Navbar />
           <main>{children}</main>

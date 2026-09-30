@@ -5,10 +5,11 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${siteConfig.url}/#person`,
-    name: siteConfig.fullName,
+    name: "فضيلة الشيخ محمد حمدو رشو",
     alternateName: [
-      siteConfig.name,
       siteConfig.arabicName,
+      siteConfig.fullName,
+      siteConfig.name,
       "ሼኽ ሙሐመድ ሐምዱ ረሾ",
       "Sheikh Muhammed Hamdu",
       "Ustaz Mohamed Hamdu"
@@ -16,9 +17,14 @@ export function JsonLd() {
     url: siteConfig.url,
     image: `${siteConfig.url}/portrait.jpg`,
     jobTitle: [
-      "Islamic Scholar",
-      "Imam & Khateeb of Masjid Abu Bakr",
-      "Teacher of Islamic Jurisprudence"
+      "عالم وباحث إسلامي في أصول الفقه",
+      "رئيس أئمة أديس أبابا ومدينة شغر",
+      "رئيس مجلس علماء محافظة لمي كرى",
+      "عضو المجلس الأعلى للشؤون الإسلامية بأديس أبابا",
+      "إمام وخطيب مسجد أبي بكر الصديق",
+      "Islamic Scholar & Usul al-Fiqh Researcher",
+      "Chairman of the Imams of Addis Ababa & Sheger",
+      "Chairman of the Ulama Council of Lemi Kura Sub-City"
     ],
     worksFor: {
       "@type": "Mosque",
@@ -54,7 +60,8 @@ export function JsonLd() {
       siteConfig.social.telegram,
       siteConfig.social.facebook
     ],
-    description: siteConfig.shortBio
+    description:
+      "الموقع الرسمي لفضيلة الشيخ محمد حمدو رشو — عالم وباحث ومدرس إسلامي، رئيس أئمة أديس أبابا ومدينة شغر، ورئيس مجلس علماء محافظة لمي كرى، وعضو المجلس الأعلى للشؤون الإسلامية بأديس أبابا، وإمام وخطيب مسجد أبي بكر الصديق، وباحث الدكتوراه في أصول الفقه."
   };
 
   const breadcrumbsSchema = {

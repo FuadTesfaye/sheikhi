@@ -29,7 +29,11 @@ export function Footer() {
           <div>
             <p className="font-arabic text-xl text-white mb-1">فضيلة الشيخ محمد حمدو رشو</p>
             <p className="font-heading text-lg font-semibold text-white mb-3">
-              {language === "am" ? "ሼኽ ሙሐመድ ሐምዱ ረሾ" : "Sheikh Mohamed Hamdu Rasho"}
+              {language === "am" 
+                ? "ሼኽ ሙሐመድ ሐምዱ ረሾ" 
+                : language === "ar"
+                ? "عالم إسلامي • باحث في أصول الفقه"
+                : "Sheikh Mohamed Hamdu Rasho"}
             </p>
             <p className="text-sm text-white/60 leading-relaxed mb-4">
               {t.footer.description}

@@ -10,8 +10,8 @@ interface LanguageSwitcherProps {
 }
 
 const languages: Array<{ code: Language; label: string; short: string }> = [
-  { code: "en", label: "English", short: "EN" },
   { code: "ar", label: "العربية", short: "عربي" },
+  { code: "en", label: "English", short: "EN" },
   { code: "am", label: "አማርኛ", short: "አማ" },
 ];
 

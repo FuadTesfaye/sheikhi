@@ -47,7 +47,11 @@ export function Navbar() {
               الشيخ محمد حمدو رشو
             </span>
             <span className="text-xs sm:text-sm font-heading font-bold text-primary leading-tight">
-              {language === "am" ? "ሼኽ ሙሐመድ ሐምዱ ረሾ" : "Sheikh Mohamed Hamdu Rasho"}
+              {language === "am" 
+                ? "ሼኽ ሙሐመድ ሐምዱ ረሾ" 
+                : language === "ar"
+                ? "عالم إسلامي • باحث في أصول الفقه"
+                : "Sheikh Mohamed Hamdu Rasho"}
             </span>
           </Link>
 

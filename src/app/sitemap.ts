@@ -10,8 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
       alternates: {
         languages: {
-          en: `${baseUrl}?lang=en`,
           ar: `${baseUrl}?lang=ar`,
+          en: `${baseUrl}?lang=en`,
           am: `${baseUrl}?lang=am`,
         },
       },
@@ -23,8 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: {
         languages: {
-          en: `${baseUrl}/lectures?lang=en`,
           ar: `${baseUrl}/lectures?lang=ar`,
+          en: `${baseUrl}/lectures?lang=en`,
           am: `${baseUrl}/lectures?lang=am`,
         },
       },

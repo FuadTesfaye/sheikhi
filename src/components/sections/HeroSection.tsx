@@ -30,9 +30,11 @@ export function HeroSection() {
               <span>{t.hero.officialTitle}</span>
             </div>
 
-            <span className="font-arabic text-green-deep text-2xl lg:text-3xl mb-1.5 font-bold tracking-wide">
-              {t.hero.arabicName}
-            </span>
+            {language !== "ar" && (
+              <span className="font-arabic text-green-deep text-2xl lg:text-3xl mb-1.5 font-bold tracking-wide">
+                {t.hero.arabicName}
+              </span>
+            )}
             <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-2 tracking-tight">
               {displayName}
             </h1>

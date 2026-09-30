@@ -14,7 +14,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>("en");
+  const [language, setLanguageState] = useState<Language>("ar");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -26,25 +26,29 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     if (langParam && (langParam === "en" || langParam === "ar" || langParam === "am")) {
       setLanguageState(langParam);
       try {
-        localStorage.setItem("sheikhi_lang", langParam);
+        localStorage.setItem("sheikhi_lang_v2", langParam);
         document.cookie = `NEXT_LOCALE=${langParam};path=/;max-age=31536000`;
       } catch (_) {}
       return;
     }
 
-    // Check localStorage
+    // Check localStorage (v2 key ensures default Arabic for both new and existing visitors)
     try {
-      const stored = localStorage.getItem("sheikhi_lang") as Language | null;
+      const stored = localStorage.getItem("sheikhi_lang_v2") as Language | null;
       if (stored && (stored === "en" || stored === "ar" || stored === "am")) {
         setLanguageState(stored);
+      } else {
+        setLanguageState("ar");
       }
-    } catch (_) {}
+    } catch (_) {
+      setLanguageState("ar");
+    }
   }, []);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     try {
-      localStorage.setItem("sheikhi_lang", lang);
+      localStorage.setItem("sheikhi_lang_v2", lang);
       document.cookie = `NEXT_LOCALE=${lang};path=/;max-age=31536000`;
     } catch (_) {}
   };
