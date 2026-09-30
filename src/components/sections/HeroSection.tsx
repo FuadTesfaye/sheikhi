@@ -58,7 +58,7 @@ export function HeroSection() {
               </a>
             </div>
 
-            <div className="flex items-center gap-6 pt-2 border-t border-border/60 w-full justify-center lg:justify-start">
+            <div className="flex items-center gap-4 sm:gap-6 pt-2 border-t border-border/60 w-full justify-center lg:justify-start flex-wrap">
               <span className="text-xs uppercase tracking-wider text-secondary font-semibold">
                 {t.hero.officialChannels}:
               </span>
@@ -66,37 +66,37 @@ export function HeroSection() {
                 href={siteConfig.social.youtube} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-secondary hover:text-red-600 transition-colors flex items-center gap-1.5 text-xs font-medium"
+                className="text-secondary hover:text-red-600 transition-colors flex items-center gap-1.5 text-xs font-medium py-1 px-1.5"
                 title="YouTube Channel"
               >
                 <YoutubeIcon className="w-4 h-4 text-red-600" />
-                <span className="hidden sm:inline">YouTube</span>
+                <span>YouTube</span>
               </a>
               <a 
                 href={siteConfig.social.tiktok} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-secondary hover:text-primary transition-colors flex items-center gap-1.5 text-xs font-medium"
+                className="text-secondary hover:text-primary transition-colors flex items-center gap-1.5 text-xs font-medium py-1 px-1.5"
                 title="TikTok Account"
               >
                 <TikTokIcon className="w-4 h-4" />
-                <span className="hidden sm:inline">TikTok</span>
+                <span>TikTok</span>
               </a>
               <a 
                 href={siteConfig.social.telegram} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-secondary hover:text-blue-500 transition-colors flex items-center gap-1.5 text-xs font-medium"
+                className="text-secondary hover:text-blue-500 transition-colors flex items-center gap-1.5 text-xs font-medium py-1 px-1.5"
                 title="Telegram Channel"
               >
                 <Send className="w-3.5 h-3.5 text-blue-500" />
-                <span className="hidden sm:inline">Telegram</span>
+                <span>Telegram</span>
               </a>
             </div>
           </AnimatedSection>
 
-          <AnimatedSection className="w-full sm:w-72 lg:w-80 shrink-0" delay={0.2}>
-            <div className="relative p-2.5 bg-card border border-border shadow-md rounded-sm">
+          <AnimatedSection className="w-full max-w-[260px] sm:max-w-none sm:w-72 lg:w-80 shrink-0 mx-auto lg:mx-0" delay={0.2}>
+            <div className="relative p-2 sm:p-2.5 bg-card border border-border shadow-md rounded-sm">
               <div className="relative aspect-[3/4] w-full overflow-hidden bg-ivory-dark border border-border">
                 <Image
                   src="/portrait.jpg"
@@ -104,7 +104,7 @@ export function HeroSection() {
                   fill
                   priority
                   className="object-cover object-top hover:scale-[1.02] transition-transform duration-500"
-                  sizes="(max-width: 768px) 280px, 320px"
+                  sizes="(max-width: 640px) 260px, (max-width: 1024px) 288px, 320px"
                 />
               </div>
               <div className="pt-3 pb-1 text-center border-t border-border/50 mt-2">

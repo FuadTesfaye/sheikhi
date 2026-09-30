@@ -42,8 +42,8 @@ export function FeaturedLecturesSection() {
           </div>
 
           {/* Category Filter Pills */}
-          <div className="flex flex-wrap items-center gap-1.5">
-            <Filter className="w-4 h-4 text-secondary me-1 hidden sm:inline" />
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-2 sm:pb-0 sm:flex-wrap w-full sm:w-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+            <Filter className="w-4 h-4 text-secondary me-1 hidden sm:inline shrink-0" />
             {categories.map(cat => (
               <button
                 key={cat}
@@ -52,7 +52,7 @@ export function FeaturedLecturesSection() {
                   setSelectedCategory(cat);
                   setShowAll(false);
                 }}
-                className={`text-xs px-3.5 py-1.5 rounded-sm font-medium transition-colors ${
+                className={`text-xs px-3.5 py-1.5 rounded-sm font-medium transition-colors shrink-0 whitespace-nowrap ${
                   selectedCategory === cat 
                     ? "bg-green-deep text-white shadow-xs" 
                     : "bg-ivory border border-border text-secondary hover:text-primary hover:border-gold"

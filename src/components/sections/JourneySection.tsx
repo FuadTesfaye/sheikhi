@@ -17,16 +17,16 @@ export function JourneySection() {
 
         <div className="relative">
           {/* Vertical central divider line */}
-          <div className="absolute start-8 lg:start-1/2 top-0 bottom-0 w-px bg-border lg:-translate-x-1/2 rtl:lg:translate-x-1/2"></div>
+          <div className="absolute start-6 sm:start-8 lg:start-1/2 top-0 bottom-0 w-px bg-border lg:-translate-x-1/2 rtl:lg:translate-x-1/2"></div>
 
           {/* Present top indicator */}
-          <AnimatedSection className="relative z-10 flex justify-start lg:justify-center mb-12">
-            <div className="bg-ivory border border-border px-4 py-1 text-xs font-bold text-green-deep uppercase tracking-wider rounded-sm ms-3 lg:ms-0">
+          <AnimatedSection className="relative z-10 flex justify-start lg:justify-center mb-10 sm:mb-12">
+            <div className="bg-ivory border border-border px-3.5 py-1 text-xs font-bold text-green-deep uppercase tracking-wider rounded-sm ms-1.5 sm:ms-3 lg:ms-0">
               {t.journey.present}
             </div>
           </AnimatedSection>
 
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-8 sm:gap-12">
             {items.map((edu, idx) => {
               const isEven = idx % 2 === 0;
               return (
@@ -38,14 +38,14 @@ export function JourneySection() {
                   delay={idx * 0.08}
                 >
                   {/* Circle Year Badge */}
-                  <div className="absolute start-8 lg:start-1/2 w-12 h-12 rounded-full bg-ivory border border-gold flex items-center justify-center -translate-x-1/2 rtl:translate-x-1/2 z-10 shrink-0 shadow-xs">
-                    <span className="text-gold font-bold text-xs">
+                  <div className="absolute start-6 sm:start-8 lg:start-1/2 w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-ivory border border-gold flex items-center justify-center -translate-x-1/2 rtl:translate-x-1/2 z-10 shrink-0 shadow-xs">
+                    <span className="text-gold font-bold text-[11px] sm:text-xs">
                       {edu.year.split("—")[0].trim().replace(/\D/g, '') || idx + 1}
                     </span>
                   </div>
 
                   {/* Content Card */}
-                  <div className={`w-full lg:w-1/2 ps-20 lg:ps-0 ${
+                  <div className={`w-full lg:w-1/2 ps-14 sm:ps-20 lg:ps-0 ${
                     isEven 
                       ? 'lg:pe-16 text-start lg:text-end' 
                       : 'lg:ps-16 text-start'

@@ -5,16 +5,34 @@ export const siteConfig = {
   arabicName: "الشيخ محمد حمدو رشو",
   fullName: "Sheikh Mohamed Hamdu Rasho",
   headline: "Islamic Scholar · Teacher · Khateeb",
-  shortBio: "Sheikh Muhammed Hamdu is an Islamic scholar, teacher, and Imam dedicated to teaching, reminding, and serving the Muslim community. With over 25 years of experience in Islamic studies, he specializes in Fiqh, Hadith, and Quranic studies.",
+  shortBio: "Sheikh Mohamed Hamdu Rasho is an Islamic scholar, teacher, and Imam dedicated to teaching, reminding, and serving the Muslim community. With over 25 years of experience in Islamic studies, he specializes in Fiqh, Hadith, and Quranic studies.",
+  email: "mohamedhamdu3541@gmail.com",
+  phone: "+251 913083541",
+  phoneNational: "0913083541",
+  region: "Addis Ababa, Ethiopia",
+  regionArabic: "أديس أبابا، إثيوبيا",
+  regionAmharic: "አዲስ አበባ፣ ኢትዮጵያ",
+  subcity: "Lemi Kura Sub-city",
+  subcityArabic: "محافظة لمي كرى",
+  subcityAmharic: "ለሚ ኩራ ክፍለ ከተማ",
+  woreda: "Woreda 5",
+  woredaArabic: "مديرية 5",
+  woredaAmharic: "ወረዳ 5",
+  village: "Summit",
+  villageArabic: "قرية سميت",
+  villageAmharic: "ሰሚት",
+  location: "Summit, Woreda 5, Lemi Kura, Addis Ababa, Ethiopia",
+  locationArabic: "أديس أبابا - محافظة لمي كرى - مديرية 5 - قرية سميت",
+  locationAmharic: "አዲስ አበባ፣ ለሚ ኩራ ክ/ከተማ፣ ወረዳ 5፣ ሰሚት",
+  primaryInstitutions: "Masjid Abu Bakr & Africa TV",
+  primaryInstitutionsArabic: "مسجد أبي بكر الصديق وقناة إفريقيا الفضائية",
+  primaryInstitutionsAmharic: "አቡበከር መስጂድ እና አፍሪካ ቲቪ",
   fullBio: [
     "Sheikh Mohamed Hamdu Rasho is an Islamic scholar and teacher born on August 16, 1989, in Dalocha, Ethiopia. He is currently the Imam and Khateeb of Masjid Abu Bakr in Addis Ababa and a candidate for a Doctor of Philosophy in Usul al-Fiqh (Principles of Islamic Jurisprudence) at the Islamic University of Minnesota, USA.",
     "With over 25 years of dedicated experience in Islamic studies, Sheikh Muhammed has committed his life to teaching, research, and community engagement. He specializes in Fiqh, Hadith, Quranic studies, Aqidah, Tafsir, and Seerah, conducting weekly classes for both adults and youth.",
     "He has served as a translator of Khutbah at Ansar Masjid in Addis Ababa for over 12 years and has been teaching Islamic Shariah at Meweda High School for more than 8 years. He is also a member of the Scientific Research Department of the Ethiopian Islamic Affairs Supreme Council.",
     "Sheikh Muhammed is a dedicated Islamic media preacher, delivering engaging sermons and producing informative content across various Ethiopian media channels including Africa TV, Bilal TV, and Zawiya TV."
   ],
-  email: "mohamedhamdu3541@gmail.com",
-  phone: "+251 913083541",
-  location: "Addis Ababa, Ethiopia",
   social: {
     youtube: "https://youtube.com/@mohamedhamdu",
     tiktok: "https://www.tiktok.com/@shiekhmohammedhamdu",
@@ -116,6 +134,7 @@ export const qualifications = [
     title: "M.A. Graduation Certificate – Fundamentals of Islamic Jurisprudence",
     issuer: "Islamic University of Minnesota, USA",
     date: "November 2024",
+    category: "academic",
     description: "Master in Shari'a and Law, Specialization of Fundamentals of Islamic Jurisprudence. Rating: Superior. GPA: 4.3",
     thumbnail: "/certificates/Pasted_image.png"
   },
@@ -124,6 +143,7 @@ export const qualifications = [
     title: "PhD Enrollment Confirmation Letter",
     issuer: "Islamic University of Minnesota – Ethiopia Branch",
     date: "November 2024",
+    category: "academic",
     description: "Confirmation of enrollment in the PhD program in Fiqh and its Principles",
     thumbnail: "/certificates/Pasted_image_2.png"
   },
@@ -132,6 +152,7 @@ export const qualifications = [
     title: "B.A. Degree in Shariah – Imamu Al-Shafi College",
     issuer: "Imamu Al-Shafi Islamic College",
     date: "November 2022",
+    category: "academic",
     description: "Bachelor of Arts degree in Shariah with Very Good rating",
     thumbnail: "/certificates/scan16.jpg"
   },
@@ -140,6 +161,7 @@ export const qualifications = [
     title: "Certificate – Basira Imams and Scholars Training Programme",
     issuer: "Bonyan International University",
     date: "2023",
+    category: "training",
     description: "48 training hours – Basira Imams and Scholars Training Programme, Addis Ababa",
     thumbnail: "/certificates/scan01.jpg"
   },
@@ -148,6 +170,7 @@ export const qualifications = [
     title: "Certificate – Basira Imams and Scholars Training Programme",
     issuer: "Bonyan International University in collaboration with the Supreme Council for Islamic Affairs",
     date: "2024",
+    category: "training",
     description: "48 training hours – Basira Imams and Scholars Training Programme, Ethiopia",
     thumbnail: "/certificates/CCC46.jpg"
   },
@@ -156,6 +179,7 @@ export const qualifications = [
     title: "Intermediate Diploma – Teaching Arabic to Non-Arabic Speakers",
     issuer: "Arab League Educational, Cultural and Scientific Organization (ALECSO)",
     date: "June 2014",
+    category: "academic",
     description: "Intermediate Diploma in Teaching Arabic to Non-Arabic Speakers. Grade: Good.",
     thumbnail: "/certificates/scan06.jpg"
   },
@@ -164,6 +188,7 @@ export const qualifications = [
     title: "Certificate – Horn of Africa Historical Studies Center",
     issuer: "Horn of Africa Historical Studies Center",
     date: "2025",
+    category: "research",
     description: "Participation certificate from the Horn of Africa Historical Studies Center",
     thumbnail: "/certificates/certf.jpg"
   },
@@ -172,6 +197,7 @@ export const qualifications = [
     title: "Certificate of Appreciation – Scientific Research",
     issuer: "Supreme Council for Islamic Affairs in Ethiopia & Ethiopian Muslim Scholars Association",
     date: "2024",
+    category: "research",
     description: "Certificate of appreciation for participating in scientific research at the Second Annual Conference, winning the award for research on 'Female Circumcision'",
     thumbnail: "/certificates/scan07.jpg"
   },
@@ -180,6 +206,7 @@ export const qualifications = [
     title: "Sindbad Islamic College – Arabic Language Training",
     issuer: "Sindbad Islamic College",
     date: "",
+    category: "training",
     description: "Training in Arabic Language and Teaching Language Skills",
     thumbnail: "/certificates/scan02.jpg"
   },
@@ -188,6 +215,7 @@ export const qualifications = [
     title: "Awolia Islamic College – Summer Shariah Courses",
     issuer: "Awolia Islamic College",
     date: "",
+    category: "training",
     description: "Summer Shariah Courses Certificate",
     thumbnail: "/certificates/scan03.jpg"
   },
@@ -196,6 +224,7 @@ export const qualifications = [
     title: "Ibn Masoud Center – Islamic Faith and Usul Al Fiqh",
     issuer: "Ibn Masoud Center",
     date: "",
+    category: "training",
     description: "Training on Islamic Faith and Usul Al Fiqh",
     thumbnail: "/certificates/scan04.jpg"
   },
@@ -204,14 +233,23 @@ export const qualifications = [
     title: "Quran Schools Coordinating Organization",
     issuer: "Quran Schools Coordinating Organization",
     date: "",
+    category: "training",
     description: "Training on Spread of the Arabic Language and Religious Sciences Among Young People",
     thumbnail: "/certificates/scan05.jpg"
+  },
+  {
+    id: 13,
+    title: "Hadith Ijazah with Connected Chain of Transmission",
+    issuer: "Certified Hadith Scholars & Imams of the Sanctuary",
+    date: "Certified",
+    category: "ijazah",
+    description: "Official Hadith Ijazah granting transmission rights for the Six Canonical Books of Hadith, Muwatta Imam Malik, and classical Hadith compendiums with connected chains.",
+    thumbnail: "/certificates/Scan10007.jpg"
   }
 ];
 
 // Add remaining scan files as additional certificates
 export const additionalCertificates = [
-  "/certificates/Scan10001.jpg",
   "/certificates/Scan10002.jpg",
   "/certificates/Scan10003.jpg",
   "/certificates/Scan10004.jpg",
@@ -231,11 +269,7 @@ export const additionalCertificates = [
   "/certificates/scan51.jpg",
   "/certificates/scan63.jpg",
   "/certificates/scan64.jpg",
-  "/certificates/CamScanner_٢٨-١١-٢٠٢٤_١٤_٣١.jpg",
-  "/certificates/Mohamed_hamdu_rasho_cv-3.jpg",
-  "/certificates/السيرة_الذاتية_فضيلة_الشيخ_محمد_حمدو_رشو1.jpg",
-  "/certificates/محمد_حمدو_رشو.jpg",
-  "/certificates/محمد_حمدو_رشو-2.jpg"
+  "/certificates/CamScanner_٢٨-١١-٢٠٢٤_١٤_٣١.jpg"
 ];
 
 export const positions = [

@@ -77,13 +77,13 @@ export default function LecturesArchivePage() {
           </div>
 
           {/* Categories */}
-          <div className="flex flex-wrap items-center gap-1.5 w-full md:w-auto">
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-2 md:pb-0 md:flex-wrap w-full md:w-auto -mx-4 px-4 md:mx-0 md:px-0">
             {categories.map((cat) => (
               <button
                 key={cat}
                 type="button"
                 onClick={() => setSelectedCategory(cat)}
-                className={`text-xs px-3.5 py-1.5 rounded-sm font-medium transition-colors ${
+                className={`text-xs px-3.5 py-1.5 rounded-sm font-medium transition-colors shrink-0 whitespace-nowrap ${
                   selectedCategory === cat
                     ? "bg-green-deep text-white shadow-xs"
                     : "bg-card border border-border text-secondary hover:text-primary hover:border-gold"

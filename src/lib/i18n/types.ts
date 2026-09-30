@@ -59,6 +59,14 @@ export interface Translations {
     modalSubtitle: string;
     docCounter: string;
     closeEsc: string;
+    categories?: {
+      all: string;
+      academic: string;
+      ijazah: string;
+      training: string;
+      research: string;
+      archive: string;
+    };
     items: Array<{
       id: number;
       title: string;
@@ -140,6 +148,13 @@ export interface Translations {
     phone: string;
     location: string;
     followChannels: string;
+    dossierTitle?: string;
+    dossierSubtitle?: string;
+    dossierBadge?: string;
+    registry?: Array<{
+      label: string;
+      value: string;
+    }>;
   };
   footer: {
     description: string;
