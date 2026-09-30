@@ -5,7 +5,7 @@ import { YoutubeIcon, TikTokIcon, FacebookIcon } from "@/components/ui/Icons";
 
 export function ContactSection() {
   return (
-    <section className="bg-dark py-20 lg:py-32 text-ivory">
+    <section id="contact" className="bg-dark py-20 lg:py-32 text-ivory">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           <AnimatedSection>
@@ -50,12 +50,12 @@ export function ContactSection() {
                 <span className="sr-only">Telegram</span>
               </a>
               <a href={siteConfig.social.tiktok} target="_blank" rel="noopener noreferrer" className="p-3 bg-ivory/5 hover:bg-gold hover:text-dark transition-all rounded-sm flex items-center justify-center">
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                <TikTokIcon className="w-6 h-6" />
                 <span className="sr-only">TikTok</span>
               </a>
               {siteConfig.social.facebook && (
                 <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" className="p-3 bg-ivory/5 hover:bg-gold hover:text-dark transition-all rounded-sm flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7.5v4H10V22h4v-8.5z"/></svg>
+                  <FacebookIcon className="w-6 h-6" />
                   <span className="sr-only">Facebook</span>
                 </a>
               )}

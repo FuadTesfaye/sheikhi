@@ -5,7 +5,7 @@ export function ExperienceSection() {
   const sortedPositions = [...positions].sort((a, b) => parseInt(b.startDate) - parseInt(a.startDate));
 
   return (
-    <section className="bg-ivory py-20 lg:py-32">
+    <section id="experience" className="bg-ivory py-20 lg:py-32">
       <div className="container mx-auto px-4 max-w-4xl">
         <AnimatedSection className="flex items-center gap-4 mb-16">
           <span className="text-gold font-heading text-xl font-bold">05</span>

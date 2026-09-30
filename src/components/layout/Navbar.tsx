@@ -7,13 +7,14 @@ import { YoutubeIcon, TikTokIcon } from "@/components/ui/Icons";
 import { siteConfig } from "@/lib/data";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#journey", label: "Journey" },
-  { href: "#qualifications", label: "Qualifications" },
-  { href: "#teaching", label: "Teaching" },
-  { href: "#lectures", label: "Lectures" },
-  { href: "#reminders", label: "Short Reminders" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#journey", label: "Journey" },
+  { href: "/#qualifications", label: "Qualifications" },
+  { href: "/#teaching", label: "Teaching" },
+  { href: "/#lectures", label: "Lectures" },
+  { href: "/lectures", label: "Archive" },
+  { href: "/#reminders", label: "Reminders" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Navbar() {

@@ -7,7 +7,7 @@ export function JourneySection() {
   const hasCurrent = sortedEducation.some(edu => edu.current);
 
   return (
-    <section className="bg-card py-20 lg:py-32 border-b border-border">
+    <section id="journey" className="bg-card py-20 lg:py-32 border-b border-border">
       <div className="container mx-auto px-4 max-w-4xl">
         <AnimatedSection className="flex items-center justify-center gap-4 mb-20">
           <span className="text-gold font-heading text-xl font-bold">02</span>

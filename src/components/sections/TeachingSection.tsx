@@ -3,7 +3,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 export function TeachingSection() {
   return (
-    <section className="bg-card py-20 lg:py-32 border-b border-border">
+    <section id="teaching" className="bg-card py-20 lg:py-32 border-b border-border">
       <div className="container mx-auto px-4 max-w-6xl">
         <AnimatedSection className="flex items-center gap-4 mb-16">
           <span className="text-gold font-heading text-xl font-bold">04</span>

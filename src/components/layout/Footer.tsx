@@ -29,7 +29,7 @@ export function Footer() {
                 (link) => (
                   <a
                     key={link}
-                    href={`#${link.toLowerCase()}`}
+                    href={`/#${link.toLowerCase()}`}
                     className="block text-sm text-white/60 hover:text-gold transition-colors"
                   >
                     {link}
